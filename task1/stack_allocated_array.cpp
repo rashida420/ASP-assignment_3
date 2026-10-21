@@ -4,8 +4,9 @@
 
 void stack_array(){
 
-    int arrayOfnumbers[1000000];
+    int arrayOfnumbers[100000];
     arrayOfnumbers[0]=1;
+    arrayOfnumbers[99999]=0;
 }
 
 int main(){
@@ -18,7 +19,7 @@ int main(){
     auto end = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double>execution_time=(end-start);
     std::cout << std::fixed << std::setprecision(6);
-    std::cout<<"Execution time in seconds: "<<execution_time.count();
+    std::cout<<"Stack Allocated Array -Execution time in seconds: "<<execution_time.count();
     
     return 0;
 }
