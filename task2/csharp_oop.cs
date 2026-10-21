@@ -42,3 +42,30 @@ class Hexagon : Shape
   }
 }
 
+class Program
+{
+    static void Main(string[] args)
+{
+    Shape circ = new Circle("Anna");
+    Shape hex = new Hexagon("Ben");
+    Console.WriteLine("Dynamic Binding");
+    circ.Draw();
+    hex.Draw();
+
+    Console.WriteLine("Static Binding");
+    circ.ShowType();
+    hex.ShowType();
+
+    Circle c = new Circle("Maria");
+    Hexagon h = new Hexagon("Beth");
+    c.ShowType();
+    h.ShowType();
+
+    Console.ReadLine(); 
+   
+
+}
+    
+}
+
+
