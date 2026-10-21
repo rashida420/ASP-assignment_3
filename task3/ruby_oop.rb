@@ -49,3 +49,14 @@ class CD < LibraryItem
         puts "Artist: #{@artist}"
     end
 end
+
+class Library 
+    def initialize
+        @library_item=[]
+    end
+    def add_item(item)
+        @library_item.push(item)
+    end
+end
+
+    
